@@ -5,7 +5,6 @@ To run the code complete the following,
 
 
 Compile C files with: 
-
 gcc -g *.c -c
 
 Compile Assembly code with: 
