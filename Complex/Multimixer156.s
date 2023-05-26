@@ -66,7 +66,8 @@ Multimixer156field:
 	
 	vswp		d9,d10					// q4 contains X0,X2,X1,X3  q5 contains Y0,Y2,Y1,Y3
 	vadd.u32	q7,q4,q5				// q7 contains X0+Y0,X2+Y2,X1+Y1,X3+Y3
-	vshr.u32	q6,q7,#29
+	vshr.u32	q6,q7, #29
+	vsli.u32	q6,q7, #3
 	vadd.u32	q5,q6,q5				// q5 contians Y0',Y2',Y1',Y3'  q7 contians X0',X2',X1',X3'
 	
 	
